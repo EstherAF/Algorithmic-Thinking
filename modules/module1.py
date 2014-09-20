@@ -4,39 +4,6 @@ Project for Module 1. Algorithmic Thinking course, Coursera
 Esther Álvarez Feijoo
 """
 
-EX_GRAPH0 = {0: set([1, 2]),
-             1: set([]),
-             2: set([])}
-
-EX_GRAPH1 = {0: set([1, 4, 5]),
-             1: set([2, 6]),
-             2: set([3]),
-             3: set([0]),
-             4: set([1]),
-             5: set([2]),
-             6: set([])}
-
-EX_GRAPH2 = {0: set([1, 4, 5]),
-             1: set([2, 6]),
-             2: set([3, 7]),
-             3: set([7]),
-             4: set([1]),
-             5: set([2]),
-             6: set([]),
-             7: set([3]),
-             8: set([1, 2]),
-             9: set([0, 3, 4, 5, 6, 7])}
-
-def main():
-    """
-    Main function.
-    For testing purposes.
-    """
-    print(make_complete_graph(2))
-    print(compute_in_degrees(EX_GRAPH1))
-    print(in_degree_distribution(EX_GRAPH1))
-    return
-
 def make_complete_graph(num_nodes):
     """
     Creates a complete directed graph with the provided number of nodes,
